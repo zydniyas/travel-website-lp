@@ -1,0 +1,13 @@
+---
+const { img, tittle, desc } = Astro.props;
+---
+
+<div class="d-flex align-items-start gap-3">
+  <img src={img} alt="" />
+  <div class="col-md-7">
+    <p class="text-dark-electric-blue fw-bold fs-16 mb-0">{tittle}</p>
+    <p class="text-dark-electric-blue fw-normal fs-16 mb-0">
+      {desc}
+    </p>
+  </div>
+</div>

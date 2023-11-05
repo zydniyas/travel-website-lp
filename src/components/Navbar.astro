@@ -1,0 +1,70 @@
+---
+const {} = Astro.props;
+---
+
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-transparent col-11 col-md-10 mx-auto"
+>
+  <div class="container-fluid align-items-start align-items-lg-center px-0">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/img/png/jadoo-logo.png" alt="" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav gap-lg-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"
+            >Desitnations</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hotels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bookings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <button
+            class="nav-link rounded bg-bg-transparent border border-black border-1 text-black px-15px"
+            >Sign up</button
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDarkDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            EN
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark"
+            aria-labelledby="navbarDarkDropdownMenuLink"
+          >
+            <li><a class="dropdown-item" href="#">HI</a></li>
+            <li><a class="dropdown-item" href="#">AR</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

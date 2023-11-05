@@ -1,0 +1,25 @@
+---
+const { avathar, review, reviewer, reviewerDesc, active } = Astro.props;
+---
+
+<div
+  id="prevButton2"
+  class={`col-12 mw-430px shadow-3 rounded ps-30px pb-35px pt-27px  testimonial ${
+    active ? "active" : ""
+  } `}
+>
+  <img
+    class="position-absolute start-0 top-0 start-md-n27px top-md-n35px w-30px h-30px w-md-68px h-md-68px rounded-50px object-fit-cover"
+    src={avathar}
+    alt=""
+  />
+  <p class="text-dark-electric-blue fw-md-medium fs-md-16px col-11">
+    {review}
+  </p>
+  <p class="text-dark-electric-blue fw-medium fw-md-semibold fs-md-18px mb-0">
+    {reviewer}
+  </p>
+  <p class="text-dark-electric-blue fw-md-medium fs-md-14px mb-0">
+    {reviewerDesc}
+  </p>
+</div>

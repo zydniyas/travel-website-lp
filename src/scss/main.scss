@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+//
+// The main scss file.
+//
+// The main file (usually labelled main.scss) should be the only Sass file
+// from the whole code base not to begin with an underscore.
+// This file should not contain anything but @import and comments.
+//
+
+// 1. Configuration and helpers
+@import "abstracts/variables";
+@import "abstracts/functions/rem-conversion";
+@import "custom";
+@import "abstracts//utilities/utilities";
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import "bootstrap/scss/bootstrap.scss";

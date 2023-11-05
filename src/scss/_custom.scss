@@ -1,0 +1,89 @@
+.z-index{
+    &-n1{
+        z-index: -1;
+    }
+        &-2 {
+            z-index: 2;
+        }
+}
+.card {
+    border: none !important;
+    -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+    &:hover{
+    -webkit-transform: scale(1.01);  
+    transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.01, 1.01);
+    /* IE 9 */
+    -webkit-transform: scale(1.01, 1.01);
+    /* Safari and Chrome */
+    }
+}
+
+.blue-blured-circle{
+    width: 354px;
+        height: 367px;
+        flex-shrink: 0;
+        border-radius: 367px;
+            opacity: 0.8;
+            background: #59B1E6;
+            filter: blur(75px);
+}
+.filter{
+    &-grayscale{
+        &-1{
+            filter: grayscale(1);
+        }
+    }
+}
+.outline-none{
+    &:focus{
+outline: none;
+    }
+    
+}
+.footer-links{
+    &-tittle{
+        color:  #080809;
+        font-size: 21px;
+        font-weight: 700;
+          
+        
+    }
+    text-decoration: none;
+    color: #5E6282;
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav-link{
+    color: #212832 !important;
+       
+        font-size: 17px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: normal !important;
+}
+
+.testimonial{
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    right: -40px;
+    @media (max-width : 576px) {
+            right: 0;
+    
+        }
+    &.active{
+        position: relative;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: white;
+       
+    }
+}
+.navbar-collapse{
+    flex-grow: unset !important;
+}

@@ -1,0 +1,478 @@
+---
+import Navbar from "../components/Navbar.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+import TestimonialsCard from "../components/TestimonialsCard.astro";
+import ThreeStepsLi from "../components/ThreeStepsLi.astro";
+import TopDestinationCard from "../components/TopDestinationCard.astro";
+import Layout from "../layouts/Layout.astro";
+import "../scss/main.scss";
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="position-relative">
+    <img
+      class="position-absolute top-0 end-0 w-100 z-index-n1 mw-1440px"
+      src="/assets/img/svg/hero-decore-one.svg"
+      alt=""
+    />
+    <Navbar />
+    <!-- hero section strat -->
+    <div
+      class="d-flex justify-content-between pt-50px pt-lg-100px col-11 col-md-10 mx-auto"
+    >
+      <div class="mw-630px z-index-2 position-relative">
+        <p class="text-jelly-bean fw-medium fs-14px fw-md-bold fs-md-20px">
+          Best Destinations around the world
+        </p>
+        <h1 class="text-space-cadet fw-bold fs-32px fs-md-50px fs-lg-84px">
+          Travel, enjoy and live a new and full life
+        </h1>
+        <p
+          class="text-dark-electric-blue fw-normal fw-md-medium fs-14px fs-md-16px col-md-9 mb-5"
+        >
+          Built Wicket longer admire do barton vanity itself do in it. Preferred
+          to sportsmen it engrossed listening. Park gate sell they west hard for
+          the.
+        </p>
+        <div class="d-flex gap-5 gap-md-40px">
+          <button
+            class="bg-orange-web border-0 text-white rounded fw-normal fs-13 fw-md-medium fs-md-18px py-2 px-3"
+            >Find out more</button
+          >
+          <div class="d-flex align-items-center gap-20px">
+            <img class="w-md-50px" src="/assets/img/png/play-btn.png" alt="" />
+            <p
+              class="text-dark-silver mb-0 fw-normal fw-md-medium fs-13 fs-md-17px"
+            >
+              Play Demo
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="position-absolute end-0 top-80px d-none d-lg-block"
+          src="/assets/img/png/tlp-hero-img.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- hero section end -->
+    <!-- category section start -->
+    <div
+      class="position-relative mt-50px mt-md-100px mt-lg-200px col-11 mx-auto"
+    >
+      <img
+        class="position-absolute end-0 top-0 z-index-n1 d-none d-md-block"
+        src="/assets/img/svg/category-section-element.svg"
+        alt=""
+      />
+      <p
+        class="text-dark-electric-blue text-center fw-medium fs-16px fw-md-semibold fs-md-18px"
+      >
+        CATEGORY
+      </p>
+      <h1
+        class="text-space-cadet text-center fs-24px fw-bold fs-md-32px fs-lg-50px mb-70px"
+      >
+        We Offer Best Services
+      </h1>
+      <div class="d-flex flex-wrap justify-content-center">
+        <ServiceCard
+          img="/assets/img/svg/calc-weather.svg"
+          text="Calculated Weather"
+          desc="Built Wicket longer admire do barton vanity itself do in it."
+        />
+        <ServiceCard
+          img="/assets/img/svg/bst-flight.svg"
+          text="Best Flights"
+          desc="Engrossed listening. Park gate sell they west hard for the."
+        />
+        <ServiceCard
+          img="/assets/img/svg/local-event.svg"
+          text="Local Events"
+          desc="Barton vanity itself do in it. Preferd to men it engrossed listening. "
+        />
+        <ServiceCard
+          img="/assets/img/svg/custom.svg"
+          text="Customization"
+          desc="We deliver outsourced aviation services for military customers"
+        />
+      </div>
+    </div>
+    <!-- category section end -->
+    <!-- top destinatons section start -->
+    <div class="mt-50px mt-lg-100px">
+      <p
+        class="text-dark-electric-blue text-center fw-medium fs-16px fw-md-semibold fs-md-18px"
+      >
+        Top Selling
+      </p>
+      <h1
+        class="text-space-cadet text-center fs-24px fw-bold fs-md-32px fs-lg-50px mb-70px"
+      >
+        Top Destinations
+      </h1>
+
+      <div
+        class="d-flex flex-wrap gap-35px justify-content-center mw-1200px mx-auto pe-25px"
+      >
+        <TopDestinationCard
+          active
+          img="/assets/img/jpg/rome.jpg"
+          place="Rome, Italty"
+          price="5,42k"
+          days="10"
+        />
+        <TopDestinationCard
+          img="/assets/img/jpg/london.jpg"
+          place="London, UK"
+          price="4.2k"
+          days="12"
+        />
+        <TopDestinationCard
+          element
+          img="/assets/img/jpg/europe.jpg"
+          place="Full Europe"
+          price="15k"
+          days="28"
+        />
+      </div>
+    </div>
+    <!-- top destinatons section end -->
+    <!--  Easy and Fast section start -->
+    <div
+      class="d-flex flex-column flex-md-row flex-wrap flex-lg-nowrap align-items-center justify-content-between mt-50px mt-lg-100px col-11 col-md-10 mx-auto"
+    >
+      <div class="mw-lg-500px">
+        <p
+          class="text-dark-electric-blue text-center text-lg-start fw-medium fs-16px fw-md-semibold fs-md-18px"
+        >
+          Easy and Fast
+        </p>
+        <h1
+          class="text-space-cadet text-center text-lg-start fs-24px fw-bold fs-md-32px fs-lg-50px mb-30px"
+        >
+          Book your next trip in 3 easy steps
+        </h1>
+
+        <div class="d-flex flex-column gap-40px">
+          <ThreeStepsLi
+            img="/assets/img/png/choose-dst.png"
+            tittle="Choose Destination"
+            desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+          />
+          <ThreeStepsLi
+            img="/assets/img/png/make-payment.png"
+            tittle="Make Payment"
+            desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+          />
+          <ThreeStepsLi
+            img="/assets/img/png/reach.png"
+            tittle="Reach Airport on Selected Date"
+            desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+          />
+        </div>
+      </div>
+      <div class="mt-100px">
+        <div class="position-relative pt-md-60px pe-md-45px">
+          <div class="bg-white py-20px px-25px rounded-25px shadow-1">
+            <img
+              class="rounded-25px mw-200px mw-md-unset"
+              src="/assets/img/jpg/trip-to-greece.jpg"
+              alt=""
+            />
+            <p class="fw-normal fw-md-medium fs-18px">Trip To Greece</p>
+            <p
+              class="text-roman-silver fw-normal fw-md-medium fs-14px fs-md-16px"
+            >
+              14-29 June | by Robbin joseph
+            </p>
+            <div class="d-flex gap-2 mb-30px">
+              <img src="/assets/img/svg/leaf-icon.svg" alt="" />
+              <img src="/assets/img/svg/map-icon.svg" alt="" />
+              <img src="/assets/img/svg/send-icon.svg" alt="" />
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <img src="/assets/img/png/building-icon.png" alt="" />
+                <p
+                  class="text-roman-silver fw-normal fw-md-medium fs-14px fs-md-16px mb-0"
+                >
+                  24 people going
+                </p>
+              </div>
+              <img src="/assets/img/svg/like-icon.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="blue-blured-circle position-absolute top-0 end-0 z-index-n1"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Easy and Fast section end -->
+    <!-- testnimonials section start  -->
+    <div class="pt-50px pt-lg-100px mb-150px mb-lg-200px">
+      <div
+        class="d-flex flex-column flex-lg-row align-items-center justify-content-between col-11 col-md-10 mx-auto"
+      >
+        <div class="col-lg-5">
+          <p
+            class="text-dark-electric-blue text-center text-lg-start fw-medium fs-16px fw-md-semibold fs-md-18px"
+          >
+            Testimonials
+          </p>
+          <h1
+            class="text-space-cadet text-center text-lg-start fs-24px fw-bold fs-md-32px fs-lg-50px mb-80px"
+          >
+            What people say about Us.
+          </h1>
+          <div class="text-center text-lg-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="87"
+              height="12"
+              viewBox="0 0 87 12"
+              fill="none"
+            >
+              <circle cx="6" cy="6" r="6" fill="#39425D"></circle>
+              <circle cx="44" cy="6" r="6" fill="#E5E5E5"></circle>
+              <circle cx="81" cy="6" r="6" fill="#E5E5E5"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row align-items-end gap-60px">
+          <div>
+            <div class="mt-30px position-relative">
+              <TestimonialsCard
+                active
+                avathar="/assets/img/png/avathar-1.png"
+                review=" “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted ”"
+                reviewer="Mike taylor"
+                reviewerDesc=" Lahore, Pakistan"
+              />
+              <TestimonialsCard
+                avathar="/assets/img/jpg/avathar-2.jpg"
+                review=" “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted ”"
+                reviewer="Chris Thomas"
+                reviewerDesc=" CEO of Red Button"
+              />
+            </div>
+          </div>
+          <div class="d-flex gap-60px flex-column d-none d-md-flex">
+            <img id="prevButton" src="/assets/img/svg/arrow-up.svg" alt="" />
+            <img id="nextButton" src="/assets/img/svg/arrow-down.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- testnimonials section end  -->
+    <!--  logo section start -->
+    <div
+      class="d-flex flex-wrap justify-content-between align-items-center mt-50px mt-lg-100px"
+    >
+      <div
+        class="px-20px mx-auto d-flex align-items-center justify-content-center shadow-1-hover rounded h-100"
+      >
+        <img
+          class="filter-grayscale-1 w-110px h-85px object-fit-contain"
+          src="/assets/img/png/axon.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="px-20px mx-auto d-flex align-items-center justify-content-center shadow-1-hover rounded h-100"
+      >
+        <img
+          class="filter-grayscale-1 w-110px h-85px object-fit-contain"
+          src="/assets/img/png/alitalia.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="px-20px mx-auto d-flex align-items-center justify-content-center shadow-1-hover rounded h-100"
+      >
+        <img
+          class="filter-grayscale-1 w-110px h-85px object-fit-contain"
+          src="/assets/img/png/expedia.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="px-20px mx-auto d-flex align-items-center justify-content-center shadow-1-hover rounded h-100"
+      >
+        <img
+          class="filter-grayscale-1 w-110px h-85px object-fit-contain"
+          src="/assets/img/png/jetstar.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="px-20px mx-auto d-flex align-items-center justify-content-center shadow-1-hover rounded h-100"
+      >
+        <img
+          class="filter-grayscale-1 w-110px h-85px object-fit-contain"
+          src="/assets/img/png/qantas.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!--  logo section end -->
+
+    <!--  subscribe section start -->
+    <div
+      class="mt-50px mt-lg-100px position-relative pt-15px pe-15px col-11 col-md-10 mx-auto"
+    >
+      <img
+        class="position-absolute top-0 end-0 z-index-2"
+        src="/assets/img/png/share-icon.png"
+        alt=""
+      />
+      <div
+        class="bg-pale-lavender rounded-20px rounded-top-left-130px py-80px position-relative"
+      >
+        <img
+          class="position-absolute bottom-0 start-0 d-none d-md-block"
+          src="/assets/img/svg/subscribe-bg-element-one.svg"
+          alt=""
+        />
+        <img
+          class="position-absolute top-0 end-0 d-none d-md-block"
+          src="/assets/img/svg/subscribe-bg-element-two.svg"
+          alt=""
+        />
+        <div class="position-relative z-index-1s col-11 col-md-10 mx-auto">
+          <p
+            class="text-dark-electric-blue text-center fw-light fw-md-semibold fs-16px fs-md-20px fs-lg-33px mb-70px"
+          >
+            Subscribe to get information, latest news and other interesting
+            offers about Jadoo
+          </p>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-center gap-4"
+          >
+            <div
+              class="d-flex align-items-center bg-white col-lg-5 col-12 rounded ps-30px gap-2 h-65px"
+            >
+              <img src="/assets/img/png/email-icon.png" alt="" />
+              <input
+                placeholder="Your email"
+                class="border-0 w-100 outline-none"
+                type="email"
+                name=""
+                id=""
+              />
+            </div>
+            <button
+              class="bg-coral-reef border-0 rounded py-20px px-50px text-white"
+              >Subscribe</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  subscribe section end -->
+    <!--  footer section start -->
+    <div class="col-11 col-md-10 mx-auto">
+      <div
+        class="d-flex flex-wrap align-items-center justify-content-start justify-content-lg-center gap-4 gap-md-80px mt-50px mt-lg-100px mb-70px"
+      >
+        <div class="col-lg-3">
+          <p class="text-space-cadet fw-normal fw-md-medium fs-44px">Jadoo.</p>
+          <p class="text-dark-electric-blue fw-normal fw-md-medium fs-13px">
+            Book your trip in minute, get full Control for much longer.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap flex-md-nowrap gap-35px gap-md-70px">
+          <div>
+            <p class="footer-links-tittle">Company</p>
+            <div class="d-flex flex-column gap-2">
+              <a class="footer-links" href="">About</a>
+              <a class="footer-links" href="">Careers</a>
+              <a class="footer-links" href="">Mobile</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-links-tittle">Contact</p>
+            <div class="d-flex flex-column gap-2">
+              <a class="footer-links" href="">Help/FAQ</a>
+              <a class="footer-links" href="">Press</a>
+              <a class="footer-links" href="">Affilates</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-links-tittle">More</p>
+            <div class="d-flex flex-column gap-2">
+              <a class="footer-links" href="">Airlinefees</a>
+              <a class="footer-links" href="">Airline</a>
+              <a class="footer-links" href="">Low fare tips</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex align-items-center gap-3 mb-20px">
+            <img
+              class="shadow-1 rounded-50px"
+              src="/assets/img/svg/fb-icon.svg"
+              alt=""
+            />
+            <img
+              class="shadow-1 rounded-50px"
+              src="/assets/img/png/insta-icon.png"
+              alt=""
+            />
+            <img
+              class="shadow-1 rounded-50px"
+              src="/assets/img/svg/twitter-icon.svg"
+              alt=""
+            />
+          </div>
+          <p class="text-dark-electric-blue fw-normal fw-md-medium fs-20px">
+            Discover our app
+          </p>
+          <div class="d-flex gap-2">
+            <img src="/assets/img/png/google-play.png" alt="" />
+            <img src="/assets/img/png/apple-store.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <p
+        class="text-dark-electric-blue fw-normal fw-md-medium fs-14px text-center mb-70px"
+      >
+        All rights reserved@jadoo.co
+      </p>
+    </div>
+
+    <!--  footer section end -->
+  </div>
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+      const testimonials = document.querySelectorAll(".testimonial");
+      const nextButton = document.getElementById("nextButton");
+      const prevButton = document.getElementById("prevButton");
+      const prevButton2 = document.getElementById("prevButton2");
+      let activeIndex = 0;
+
+      nextButton.addEventListener("click", function () {
+        changeActive(1);
+      });
+
+      prevButton.addEventListener("click", function () {
+        changeActive(-1);
+      });
+      prevButton2.addEventListener("click", function () {
+        changeActive(-1);
+      });
+
+      function changeActive(step) {
+        testimonials[activeIndex].classList.remove("active");
+        activeIndex =
+          (activeIndex + step + testimonials.length) % testimonials.length;
+        testimonials[activeIndex].classList.add("active");
+      }
+    });
+  </script>
+</Layout>
